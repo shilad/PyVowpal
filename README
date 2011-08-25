@@ -1,5 +1,5 @@
 A python wrapper for the Vowpal Wabbit machine learning program.
-More on Vowpal Wabbit at (https://github.com/JohnLangford/vowpal_wabbit/wiki).
+More on Vowpal Wabbit at https://github.com/JohnLangford/vowpal_wabbit/wiki
 
 Requires:
 - Python >= 2.4 (for the subprocess module).
