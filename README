@@ -1,0 +1,17 @@
+A python wrapper for the Vowpal Wabbit machine learning program.
+More on Vowpal Wabbit at (https://github.com/JohnLangford/vowpal_wabbit/wiki).
+
+Requires:
+- Python >= 2.4 (for the subprocess module).
+- The vw executable (from the main VW website).
+
+Basic usage of the module:
+- Create VowpalRecord objects for both the training and test set.
+- Create a new Vowpal object and pass the records to the predict method.
+- Receive predictions as a return value.
+
+You can find an example at the bottom of the vowpal.py module.
+
+TODO:
+- Support streaming of record objects so that the entire dataset doesn't
+need to be in memory.
