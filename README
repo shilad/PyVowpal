@@ -13,5 +13,4 @@ Basic usage of the module:
 You can find an example at the bottom of the vowpal.py module.
 
 TODO:
-- Support streaming of record objects so that the entire dataset doesn't
-need to be in memory.
+- Support streaming of record objects so that the entire dataset doesn't need to be in memory.
