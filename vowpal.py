@@ -189,8 +189,10 @@ class Vowpal:
 
     def read_preds(self):
         ''' Reads the Vowpal prediction results. '''
-        preds = collections.deque([], self.n_test_examples)
+        preds = collections.deque()
         for line in open(self.path_preds):
             (pred, id) = line.split()
             preds.append([id, float(pred)])
+            if len(preds) > self.n_test_examples:
+                preds.popleft()
         return list(preds)
