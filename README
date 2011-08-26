@@ -1,16 +1,29 @@
 A python wrapper for the Vowpal Wabbit machine learning program.
 More on Vowpal Wabbit at https://github.com/JohnLangford/vowpal_wabbit/wiki
 
+Authored by Shilad Sen.
+
+Distributed under the Apache Software Foundation License, version 2: http://www.apache.org/licenses/LICENSE-2.0
+
+You can find code examples in test_examples.py.
+
 Requires:
-- Python >= 2.4 (for the subprocess module).
+- Python >= 2.4 (for the subprocess module and deque).
 - The vw executable (from the main VW website).
 
 Basic usage of the module:
-- Create VowpalRecord objects for both the training and test set.
+- Create VowpalExample objects for both the training and test set.
 - Create a new Vowpal object and pass the records to the predict method.
 - Receive predictions as a return value.
 
-You can find an example at the bottom of the vowpal.py module.
+There are three ways to specify input examples:
+- A list of VowpalExample objects. The entire dataset must fit in memory.
+- An ExampleStream object. You can write VowpalExample objects to it, and they do not need to fit in memory. All training examples must appear before testing examples.
+- A file in the correct input format. All training examples must appear before testing examples.
+
+
+CHANGELOG:
+- Added methods to support streaming of input examples.
 
 TODO:
-- Support streaming of record objects so that the entire dataset doesn't need to be in memory.
+- Support streaming of prediction results so that they don't need to fit in memory.
