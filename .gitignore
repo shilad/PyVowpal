@@ -1,0 +1,6 @@
+*.pyc
+*.cache
+*.log
+*.preds
+*.file.txt
+*.stream.txt
