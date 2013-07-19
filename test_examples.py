@@ -18,7 +18,7 @@ DATA = [
     [None, {'body' : {'height' : 0.7, 'weight' : 0.2}, 'age' : {'age' : 0.3}, 'sports' : { 'soccer' : None }}],
 ]
 
-PATH_VW = '/Users/shilad/Downloads/JohnLangford-vowpal_wabbit-9a1da62/vw'
+PATH_VW = '/home/theja/local/vowpal_wabbit/vowpalwabbit/vw'
 
 def test_predict_from_examples():
     """

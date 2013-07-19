@@ -168,7 +168,7 @@ class Vowpal:
         argd = {
             '--conjugate_gradient' : None,
             '--passes' : '100', 
-            '--regularization' : '.001',
+            '--l2' : '.001',
             '--cache_file' : self.path_cache,
             '--predictions' : self.path_preds,
             '--data' : self.path_data

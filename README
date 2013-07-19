@@ -6,6 +6,11 @@ Authored by Shilad Sen.
 Distributed under the Apache Software Foundation License, version 2: http://www.apache.org/licenses/LICENSE-2.0
 
 You can find code examples in test_examples.py.
+1. Edit PATH_VW to direct to the executable binary vw
+2. Run python ./test_examples.py
+
+Common Issues:
+Works with vw 7.3. Depending on the version, the parameters (like --l2 for l2 regularization) may change change.
 
 Requires:
 - Python >= 2.4 (for the subprocess module and deque).
